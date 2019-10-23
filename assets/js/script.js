@@ -12,15 +12,12 @@ var surnReq = prompt ("inserisci il tuo cognome");
 
 // array altri cognomi
 var surnList = ["Ferrari","Ricci","Rossi","Bianchi","Alunni","Giorgetti"];
-// console.log(surnList);
 
 // aggiunta cognome
 surnList.push (surnReq);
-// console.log(surnList);
 
 // array ordinato - sort
 var surnOrd = surnList.sort ();
-// console.log(surnOrd);
 
 // OUTPUTs
 for (var i = 0; i < surnOrd.length; i++) {
