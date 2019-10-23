@@ -8,7 +8,7 @@
 // - posizione in cui si trova il cognome dell’utente nell’array ordinato.
 
 // richiesta cognome
-var surnReq = prompt ("inserisci il tuo cognome");
+var surnReq = prompt("inserisci il tuo cognome");
 
 // array altri cognomi
 var surnList = ["Ferrari","Ricci","Rossi","Bianchi","Alunni","Giorgetti"];
@@ -16,10 +16,10 @@ console.log(surnList);
 var origSurnList = surnList.slice(0);
 
 // aggiunta cognome
-surnList.push (surnReq);
+surnList.push(surnReq);
 
 // array ordinato - sort
-surnList.sort ();
+surnList.sort();
 console.log(surnList);
 
 // OUTPUTs
@@ -39,13 +39,4 @@ while (a < surnList.length){
   a++;
 }
 
-// console.log(surnList.valueOf());
-// var original = surnList.slice(0);
 console.log(origSurnList);
-
-
-// var a = 0;
-// while (a < surnOrd.length) {
-//   console.log(surnOrd[a]);
-//   a++;
-// }
