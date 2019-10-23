@@ -26,19 +26,18 @@ for (var i = 0; i < surnOrd.length; i++) {
   }
 }
 
-document.getElementById('surnames').innerHTML = surnOrd;
+// document.getElementById('surnames').innerHTML = surnOrd;
 
-// var surnOrdPrec;
-// var a = 0;
-// while (a < surnOrd.lenght){
-//   console.log(surnOrd[a]);
-  // surnOrdPrec = document.getElementById('surnames').innerHTML;
-  // document.getElementById('surnames').innerHTML = surnOrdPrec + "<li>" + surnOrd[a] + "</li>";
-//   a++;
-// }
-
+var surnOrdPrec;
 var a = 0;
-while (a < surnOrd.lenght) {
-  console.log(surnOrd[a]);
+while (a < surnOrd.length){
+  surnOrdPrec = document.getElementById('surnames').innerHTML;
+  document.getElementById('surnames').innerHTML = surnOrdPrec + "<li>" + surnOrd[a] + "</li>";
   a++;
 }
+
+// var a = 0;
+// while (a < surnOrd.length) {
+//   console.log(surnOrd[a]);
+//   a++;
+// }
