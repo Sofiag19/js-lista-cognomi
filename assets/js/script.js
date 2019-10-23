@@ -12,16 +12,19 @@ var surnReq = prompt ("inserisci il tuo cognome");
 
 // array altri cognomi
 var surnList = ["Ferrari","Ricci","Rossi","Bianchi","Alunni","Giorgetti"];
+console.log(surnList);
+var origSurnList = surnList.slice(0);
 
 // aggiunta cognome
 surnList.push (surnReq);
 
 // array ordinato - sort
-var surnOrd = surnList.sort ();
+surnList.sort ();
+console.log(surnList);
 
 // OUTPUTs
-for (var i = 0; i < surnOrd.length; i++) {
-  if (surnOrd[i] === surnReq) {
+for (var i = 0; i < surnList.length; i++) {
+  if (surnList[i] === surnReq) {
     document.getElementById('position').innerHTML = "Il cognome " + surnReq + " si trova nella posizione " + (i + 1) + ":";
   }
 }
@@ -30,11 +33,16 @@ for (var i = 0; i < surnOrd.length; i++) {
 
 var surnOrdPrec;
 var a = 0;
-while (a < surnOrd.length){
+while (a < surnList.length){
   surnOrdPrec = document.getElementById('surnames').innerHTML;
-  document.getElementById('surnames').innerHTML = surnOrdPrec + "<li>" + surnOrd[a] + "</li>";
+  document.getElementById('surnames').innerHTML = surnOrdPrec + "<li>" + surnList[a] + "</li>";
   a++;
 }
+
+// console.log(surnList.valueOf());
+// var original = surnList.slice(0);
+console.log(origSurnList);
+
 
 // var a = 0;
 // while (a < surnOrd.length) {
