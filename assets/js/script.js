@@ -21,29 +21,12 @@ surnList.push (surnReq);
 // array ordinato - sort
 var surnOrd = surnList.sort ();
 // console.log(surnOrd);
-var find = false;
-var i = 0;
 
-while (i < surnOrd.lenght) {
-  if (surnOrd[i] === surnReq) {
-    find = true;
-    document.getElementById('position').innerHTML = "Il cognome " + surnReq + " si trova nella posizione " + i;
-    // console.log(surnReq + i);
-  }
-  i++;
-}
-//
-// if (find = true) {
-//   document.getElementById('position').innerHTML = "Il cognome " + surnReq + " si trova nella posizione " + i;
-// }
-
+// OUTPUTs
 for (var i = 0; i < surnOrd.length; i++) {
   if (surnOrd[i] === surnReq) {
-    find = true;
     document.getElementById('position').innerHTML = "Il cognome " + surnReq + " si trova nella posizione " + (i + 1) + ".";
-    // console.log(surnReq + i);
   }
 }
-
 
 document.getElementById('surnames').innerHTML = surnOrd;
