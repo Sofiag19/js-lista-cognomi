@@ -5,7 +5,7 @@
 // QUINDI OUTPUT sarà:
 // - array disordinato di partenza
 // - array ordinato;
-// -  posizione in cui si trova il cognome dell’utente nell’array ordinato.
+// - posizione in cui si trova il cognome dell’utente nell’array ordinato.
 
 // richiesta cognome
 var surnReq = prompt ("inserisci il tuo cognome");
@@ -22,8 +22,23 @@ var surnOrd = surnList.sort ();
 // OUTPUTs
 for (var i = 0; i < surnOrd.length; i++) {
   if (surnOrd[i] === surnReq) {
-    document.getElementById('position').innerHTML = "Il cognome " + surnReq + " si trova nella posizione " + (i + 1) + ".";
+    document.getElementById('position').innerHTML = "Il cognome " + surnReq + " si trova nella posizione " + (i + 1) + ":";
   }
 }
 
 document.getElementById('surnames').innerHTML = surnOrd;
+
+// var surnOrdPrec;
+// var a = 0;
+// while (a < surnOrd.lenght){
+//   console.log(surnOrd[a]);
+  // surnOrdPrec = document.getElementById('surnames').innerHTML;
+  // document.getElementById('surnames').innerHTML = surnOrdPrec + "<li>" + surnOrd[a] + "</li>";
+//   a++;
+// }
+
+var a = 0;
+while (a < surnOrd.lenght) {
+  console.log(surnOrd[a]);
+  a++;
+}
