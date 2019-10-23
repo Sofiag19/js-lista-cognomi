@@ -8,7 +8,7 @@
 // - posizione in cui si trova il cognome dell’utente nell’array ordinato.
 
 // richiesta cognome
-var surnReq = prompt("inserisci il tuo cognome");
+var surnReq = prompt("INSERISCI IL TUO COGNOME SE VUOI ESSERE RECLUTATO NEL TEAM");
 
 // array altri cognomi
 var surnList = ["Ferrari","Ricci","Rossi","Bianchi","Alunni","Giorgetti"];
@@ -23,9 +23,11 @@ surnList.sort();
 console.log(surnList);
 
 // OUTPUTs
+document.getElementById('saluto').innerHTML = "Oggi colleghi, si unisce a noi un nuovo membro: salutiamo tutti insieme il Sig." + surnReq + "!";
+
 for (var i = 0; i < surnList.length; i++) {
   if (surnList[i] === surnReq) {
-    document.getElementById('position').innerHTML = "Il cognome " + surnReq + " si trova nella posizione " + (i + 1) + ":";
+    document.getElementById('position').innerHTML = "Sig. " + surnReq + " ti potrai posizionare nella scrivania n." + (i + 1) + ", vicino ai tuoi colleghi.<br> Bene, eccoci al completo:";
   }
 }
 
