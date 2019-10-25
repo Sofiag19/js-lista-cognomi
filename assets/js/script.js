@@ -31,6 +31,10 @@ for (var i = 0; i < surnList.length; i++) {
   }
 }
 
+// prova con index.Of()
+// var posElem = surnList.indexOf(surnReq)+1;
+// document.getElementById('position').innerHTML = posElem;
+
 // document.getElementById('surnames').innerHTML = surnOrd;
 
 var surnOrdPrec;
